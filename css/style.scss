@@ -1,8 +1,7 @@
 @use "sass:color";
 
-// =============================
-// VARIABLES
-// =============================
+// ============== VARIABLES =========================
+
 $border-size: 1000px;
 
 $header-bg: linear-gradient(to top, #ea7152, #d3976a);
@@ -14,9 +13,7 @@ $product-gradient: linear-gradient(to top, #ffca95, #ffe5b7);
 $shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 $hover-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 
-// =============================
-// MIXINS
-// =============================
+// =================== MIXINS =======================
 @mixin flex-center($direction: row, $justify: center, $align: center) {
 	display: flex;
 	flex-direction: $direction;
@@ -57,9 +54,7 @@ $hover-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s ease;
 }
 
-// =============================
-// GLOBAL STYLES
-// =============================
+// ============GLOBAL STYLES===============
 * {
 	margin: 0;
 	padding: 0;
@@ -93,7 +88,7 @@ body {
 
 		nav {
 			@include flex-center(row, flex-start);
-			gap: 1.5rem;
+			gap: 0.5rem;
 			z-index: 1;
 
 			a {
@@ -103,6 +98,8 @@ body {
 				font-weight: 500;
 				position: relative;
 				transition: color 0.3s ease;
+                padding: 5px 10px;
+                border-radius: 3px;
 
 				&::after {
 					content: "";
@@ -178,23 +175,23 @@ body {
 						left: 55px;
 						height: 180%;
 						transition: transform 0.4s ease;
-
-						&:hover {
-							transform: scale(1.03);
-						}
 					}
 
 					#btn-placeholder {
 						position: relative;
 						top: 60vh;
-						width: 50vw;
+                        left: -5vh;
+						width: 55vw;
 						height: 15vh;
 
 						a {
 							@include button-style($accent, #ffe5b7, $accent-hover);
-							padding-left: 33vw;
+                            background: linear-gradient(to right, color.adjust($accent, $lightness: 20%), $accent);
+							border-width: 3px;
+                            border-style: solid;
+                            border-color: color.adjust($accent, $lightness: 40%);
+                            padding-left: 33vw;
 							position: relative;
-							z-index: 1;
 						}
 					}
 				}
@@ -208,6 +205,18 @@ body {
 						top: 21vh;
 						left: 42vw;
 					}
+
+                    .subtext-logo {
+                        position: absolute;
+                        top: 0vh;
+                        left: 38vw;
+                        height: 40vh;
+                        transition: transform 0.4s ease;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
 
 					img {
 						display: flex;
@@ -263,6 +272,7 @@ body {
 						max-height: 100%;
 						object-fit: contain;
 						transition: transform 0.3s ease, filter 0.3s ease;
+                        border-radius: 5px;
 
 						.product-card:hover & {
 							transform: scale(1.1);
