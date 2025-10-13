@@ -19,6 +19,7 @@ body header {
   justify-content: space-between;
   background: linear-gradient(to top, #ea7152, #d3976a);
   padding: 5px 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 body header #logo {
   height: 50px;
@@ -126,14 +127,38 @@ body main #hero .hero-content .hero-right img {
   padding-top: 5vh;
   height: 95%;
 }
+body main #products-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  gap: 12px;
+  padding: 12px 48px;
+}
+body main #products-list .img-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+}
 body main #products-list .product-card {
-  background-color: #ffe5b7;
+  display: flex;
+  background: linear-gradient(to top, #ffca95, #ffe5b7);
+  opacity: 0.85;
   height: 200px;
   width: 150px;
-  display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body main #products-list:hover .product-card {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
