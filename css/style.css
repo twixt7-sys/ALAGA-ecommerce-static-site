@@ -126,5 +126,14 @@ body main #hero .hero-content .hero-right img {
   padding-top: 5vh;
   height: 95%;
 }
+body main #products-list .product-card {
+  background-color: #ffe5b7;
+  height: 200px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
