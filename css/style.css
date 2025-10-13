@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("../images/background.png") no-repeat center/cover;
+  color: #5e3e1a;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top, #ea7152, #d3976a);
+  padding: 5px 25px;
+}
+body header #logo {
+  height: 50px;
+}
+body header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+body header nav a {
+  color: white;
+  text-decoration: none;
+  font: 0.8rem sans-serif;
+  font-weight: 500;
+}
+body header nav a:hover {
+  text-decoration: underline;
+}
+body main {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+body main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1000px;
+  height: 1000px;
+  background: url("../images/border_BL.png") no-repeat bottom left;
+  background-size: contain;
+}
+body main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 1000px;
+  background: url("../images/border_UR.png") no-repeat;
+  background-size: contain;
+}
+body main #hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+body main #hero .hero-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+body main #hero .hero-content .hero-left {
+  flex: 1;
+  min-width: 400px;
+}
+body main #hero .hero-content .hero-left img {
+  position: absolute;
+  top: 15px;
+  left: 55px;
+  height: 200%;
+}
+body main #hero .hero-content .hero-left #btn-placeholder {
+  position: relative;
+  top: 60vh;
+  width: 50vw;
+  height: 15vh;
+}
+body main #hero .hero-content .hero-left #btn-placeholder a {
+  background-color: #7b6149;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffe5b7;
+  text-align: center;
+  position: relative;
+  padding-left: 33vw;
+  z-index: 1;
+}
+body main #hero .hero-content .hero-left #btn-placeholder a:hover {
+  background-color: #b08054;
+}
+body main #hero .hero-content .hero-right {
+  flex: 1;
+}
+body main #hero .hero-content .hero-right h4 {
+  color: #D44;
+  position: absolute;
+  top: 21vh;
+  left: 42vw;
+}
+body main #hero .hero-content .hero-right img {
+  display: flex;
+  position: relative;
+  padding-left: 60px;
+  padding-top: 5vh;
+  height: 95%;
+}
+
+/*# sourceMappingURL=style.css.map */
