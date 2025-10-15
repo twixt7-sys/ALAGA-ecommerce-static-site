@@ -299,5 +299,16 @@ body {
 				}
 			}
 		}
+        #about {
+            @include flex-center();
+            #container {
+                @include flex-center(column);
+                background-color: $nav-bg;
+                padding: 24px;
+                margin: 12% 24%;
+                border-radius: 24px;
+                gap: 12px;
+            }
+        }
 	}
 }

@@ -271,5 +271,22 @@ body main #products-list .product-card .card-btn:active {
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+body main #about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main #about #container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc936a;
+  padding: 24px;
+  margin: 12% 24%;
+  border-radius: 24px;
+  gap: 12px;
+}
 
 /*# sourceMappingURL=style.css.map */
