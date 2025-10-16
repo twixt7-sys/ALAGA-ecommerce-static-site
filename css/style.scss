@@ -9,6 +9,7 @@ $nav-bg: #bc936a;
 $text-color: #5e3e1a;
 $accent: #7b6149;
 $accent-hover: #b08054;
+$ivory: #ffca95;
 $product-gradient: linear-gradient(to top, #ffca95, #ffe5b7);
 $shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 $hover-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
@@ -52,6 +53,22 @@ $hover-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 	box-shadow: $shadow;
 	transition: all 0.3s ease;
+}
+
+@mixin margin-padding($m1: 0, $m2: 0, $p: 0, $p2: 0) {
+	margin: $m1 $m2;
+	padding: $p $p2;
+}
+
+@mixin container() {
+	@include flex-center(column);
+	@include margin-padding(50px, 0, 45px, 50px);
+	width: 60%;
+	height: 80%;
+	box-shadow: $shadow;
+	background: linear-gradient(to bottom right, $ivory, #ffe5b7);
+	border-radius: 24px;
+	gap: 12px;
 }
 
 // ============GLOBAL STYLES===============
@@ -300,15 +317,24 @@ body {
 			}
 		}
         #about {
-            @include flex-center();
+            @include flex-center(row, center, center);
             #container {
-                @include flex-center(column);
-                background-color: $nav-bg;
-                padding: 24px;
-                margin: 12% 24%;
-                border-radius: 24px;
-                gap: 12px;
+                @include container();
+				text-align: center;
+				article{
+					gap: 12px;
+				}
             }
         }
+		#contact {
+			@include flex-center(row, center, center);
+			#container {
+				@include container();
+				text-align: center;
+				article{
+					gap: 12px;
+				}
+			}
+		}
 	}
 }
