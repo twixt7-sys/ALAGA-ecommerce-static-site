@@ -93,6 +93,29 @@ body {
 		background: $header-bg;
 		padding: 5px 25px;
 		box-shadow: $shadow;
+		#search {
+			border-radius: 25px;
+			border: solid;
+			border-width: 1.5px;
+			border-color: #ffca95;
+			width: 30%;
+			height: 50%;
+			display: flex;
+			align-items: center;
+			background-color: #ffca95;
+			opacity: 0.5;
+			padding: 3px;
+			svg {
+				height: 100%;
+			}
+			input {
+				height: 100%;
+				width: 100%;
+				background-color: #FFF0;
+				border: none;
+				outline: none;
+			}
+		}
 
 		#logo {
 			height: 50px;
@@ -349,5 +372,13 @@ body {
 				}
 			}
 		}
+	}
+	footer {
+		@include flex-center(row, flex-end, center);
+		background: $header-bg;
+		padding: 5px 50px;
+		box-shadow: $shadow;
+		font-weight: 100;
+		font-size: xx-small;
 	}
 }
