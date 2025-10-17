@@ -316,8 +316,20 @@ body main #contact #container {
   gap: 12px;
   text-align: center;
 }
-body main #contact #container article {
+body main #contact #container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
+  width: 100%;
+}
+body main #contact #container section article {
+  margin: 12px 12px;
+  padding: 12px 12px;
+  background-color: #bc936a;
+  border-radius: 6px;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

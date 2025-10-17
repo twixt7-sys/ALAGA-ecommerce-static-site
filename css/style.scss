@@ -331,8 +331,16 @@ body {
 			#container {
 				@include container();
 				text-align: center;
-				article{
+				section{
+					@include flex-center(column, center, center);
 					gap: 12px;
+					width: 100%;
+					article {
+						@include margin-padding(12px, 12px, 12px, 12px);
+						background-color: $nav-bg;
+						border-radius: 6px;
+						width: 80%;
+					}
 				}
 			}
 		}
