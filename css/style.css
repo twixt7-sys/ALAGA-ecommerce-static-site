@@ -316,20 +316,42 @@ body main #contact #container {
   gap: 12px;
   text-align: center;
 }
-body main #contact #container section {
+body main #contact #container form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   width: 100%;
 }
-body main #contact #container section article {
-  margin: 12px 12px;
+body main #contact #container form input, body main #contact #container form textarea {
+  margin: 0px 0px;
   padding: 12px 12px;
-  background-color: #bc936a;
+  background-color: #fdedd3;
   border-radius: 6px;
   width: 80%;
+  border: none;
+}
+body main #contact #container form #submit {
+  background-color: #fff;
+  color: #ffca95;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-color: #bc936a;
+}
+body main #contact #container form #submit:hover {
+  background-color: #7b6149;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+body main #contact #container form #submit:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

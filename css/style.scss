@@ -331,15 +331,20 @@ body {
 			#container {
 				@include container();
 				text-align: center;
-				section{
+				form{
 					@include flex-center(column, center, center);
-					gap: 12px;
+					gap: 4px;
 					width: 100%;
-					article {
-						@include margin-padding(12px, 12px, 12px, 12px);
-						background-color: $nav-bg;
+					input, textarea {
+						@include margin-padding(0px, 0px, 12px, 12px);
+						background-color: #fdedd3;
 						border-radius: 6px;
 						width: 80%;
+						border: none;
+					}
+					#submit {
+						@include button-style(#fff, #ffca95, $accent);
+						background-color: #bc936a;
 					}
 				}
 			}
