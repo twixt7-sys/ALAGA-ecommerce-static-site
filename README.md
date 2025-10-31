@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-    <img src="screenshots/logo.jpg" width="150"/><br><br>
+    <img src="images\readME assets\readME icon.png" width="150"/><br><br>
     A Frontend Web Application using <br>
     only HTML & CSS(SCSS)
 </p>
