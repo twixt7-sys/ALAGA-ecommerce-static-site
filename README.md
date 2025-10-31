@@ -57,25 +57,29 @@
 
 ## Screenshots 📱
 
-<table>
+<table align="center">
     <tr>
-        <td>
-            <img src="images\readME assets\screenshots\ss0.png" width="450"/>
+        <td width="150" align="center">Hero Page</td>
+        <td width="450">
+            <img src="images\readME assets\screenshots\ss0.png" />
         </td>
     </tr>
     <tr>
-        <td>
-            <img src="images\readME assets\screenshots\ss1.png" width="450"/>
+        <td width="150" align="center">Products Page</td>
+        <td width="450">
+            <img src="images\readME assets\screenshots\ss1.png" />
         </td>
     </tr>
     <tr>
-        <td>
-            <img src="images\readME assets\screenshots\ss2.png" width="450"/>
+        <td width="150" align="center">About Page</td>
+        <td width="450">
+            <img src="images\readME assets\screenshots\ss2.png" />
         </td>
     </tr>
     <tr>
-        <td>
-            <img src="images\readME assets\screenshots\ss3.png" width="450"/>
+        <td width="150" align="center">Contact Page</td>
+        <td width="450">
+            <img src="images\readME assets\screenshots\ss3.png"/>
         </td>
     </tr>
 </table>
