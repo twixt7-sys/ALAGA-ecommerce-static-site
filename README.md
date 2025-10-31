@@ -55,7 +55,7 @@
 
 ---
 
-## Screenshots 📱
+<h3 align="center">📸------ Screenshots ------📸</h3>
 
 <table align="center">
     <tr>
