@@ -14,10 +14,10 @@
     components like:
     
         🏠: Home Page
-        🔍: Search Functionality
-        🛒: Shopping Cart
-        📝: User Reviews & Ratings
         📦: Product Listings
+        🔍: Search Functionality
+        ℹ️: About Us Page
+        📞: Contact Form
     
 ---
 
