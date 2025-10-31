@@ -87,7 +87,15 @@
 
 ## Instructions 📜
 
--- to add
+1. Clone the repository using:
+   ```
+   git clone <repository-url>
+    ```
+2. Navigate to the project directory:
+   ```
+   cd simple-ecommerce
+   ```
+3. Open `index.html` in your web browser to view the application.
+4. Explore the various features and pages of the e-commerce site.
 
 ---
-
