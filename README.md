@@ -60,25 +60,22 @@
 <table>
     <tr>
         <td>
-            <img src="screenshots/login.jpg" width="300"/>
+            <img src="images\readME assets\screenshots\ss0.png" width="450"/>
         </td>
+    </tr>
+    <tr>
         <td>
-            <img src="screenshots/register.jpg" width="300"/>
+            <img src="images\readME assets\screenshots\ss1.png" width="450"/>
         </td>
+    </tr>
+    <tr>
         <td>
-            <img src="screenshots/homepage.jpg" width="300"/>
+            <img src="images\readME assets\screenshots\ss2.png" width="450"/>
         </td>
+    </tr>
+    <tr>
         <td>
-            <img src="screenshots/FAB.jpg" width="300"/>
-        </td>
-        <td>
-            <img src="screenshots/comment.jpg" width="300"/>
-        </td>
-        <td>
-            <img src="screenshots/comment2.jpg" width="300"/>
-        </td>
-        <td>
-            <img src="screenshots/createpost.jpg" width="300"/>
+            <img src="images\readME assets\screenshots\ss3.png" width="450"/>
         </td>
     </tr>
 </table>
