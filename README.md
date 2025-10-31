@@ -60,25 +60,25 @@
 <table align="center">
     <tr>
         <td width="150" align="center">Hero Page</td>
-        <td width="450">
+        <td width="600">
             <img src="images\readME assets\screenshots\ss0.png" />
         </td>
     </tr>
     <tr>
         <td width="150" align="center">Products Page</td>
-        <td width="450">
+        <td width="600">
             <img src="images\readME assets\screenshots\ss1.png" />
         </td>
     </tr>
     <tr>
         <td width="150" align="center">About Page</td>
-        <td width="450">
+        <td width="600">
             <img src="images\readME assets\screenshots\ss2.png" />
         </td>
     </tr>
     <tr>
         <td width="150" align="center">Contact Page</td>
-        <td width="450">
+        <td width="600">
             <img src="images\readME assets\screenshots\ss3.png"/>
         </td>
     </tr>
