@@ -94,7 +94,7 @@
     ```
 2. Navigate to the project directory:
    ```
-   cd simple-ecommerce
+   cd <project-directory>
    ```
 3. Open `index.html` in your web browser to view the application.
 4. Explore the various features and pages of the e-commerce site.
