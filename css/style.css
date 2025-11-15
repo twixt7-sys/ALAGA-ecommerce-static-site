@@ -87,6 +87,10 @@ body header nav a:hover {
 body header nav a:hover::after {
   width: 100%;
 }
+body header nav #burger-button {
+  visibility: hidden;
+  height: 25px;
+}
 body main {
   display: flex;
   flex-direction: column;
