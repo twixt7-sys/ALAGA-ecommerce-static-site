@@ -95,6 +95,7 @@ body {
 		box-shadow: $shadow;
 		#logo-and-search {
 			@include flex-center(row, space-between);
+			gap: 15px;
 			#logo {
 				height: 50px;
 				transition: transform 0.3s ease;
@@ -108,7 +109,7 @@ body {
 				border: solid;
 				border-width: 1.5px;
 				border-color: #ffca95;
-				width: 80%;
+				width: 300%;
 				height: 50%;
 				display: flex;
 				align-items: center;
@@ -124,6 +125,7 @@ body {
 					background-color: #FFF0;
 					border: none;
 					outline: none;
+					color: black;
 				}
 			}
 		}

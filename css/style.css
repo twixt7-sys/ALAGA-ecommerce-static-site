@@ -28,6 +28,7 @@ body header #logo-and-search {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 body header #logo-and-search #logo {
   height: 50px;
@@ -41,7 +42,7 @@ body header #logo-and-search #search {
   border: solid;
   border-width: 1.5px;
   border-color: #ffca95;
-  width: 80%;
+  width: 300%;
   height: 50%;
   display: flex;
   align-items: center;
@@ -58,6 +59,7 @@ body header #logo-and-search #search input {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   outline: none;
+  color: black;
 }
 @media (max-width: 600px) {
   body header {
