@@ -53,6 +53,11 @@ body header #logo {
 body header #logo:hover {
   transform: scale(1.05);
 }
+@media (max-width: 600px) {
+  body header {
+    flex-direction: column;
+  }
+}
 body header nav {
   display: flex;
   flex-direction: row;
@@ -108,6 +113,7 @@ body main::before, body main::after {
   z-index: -1;
 }
 body main::before {
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 1000px;
@@ -115,7 +121,8 @@ body main::before {
   background: url("../images/border_BL.png") no-repeat bottom left;
 }
 body main::after {
-  top: 10vh;
+  position: absolute;
+  top: 0;
   right: 0;
   width: 1000px;
   height: 1000px;
@@ -137,6 +144,13 @@ body main #hero .hero-content {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 600px) {
+  body main #hero .hero-content {
+    position: absolute;
+    left: 45vw;
+    width: 100vw;
+  }
+}
 body main #hero .hero-content .hero-left {
   flex: 1;
   min-width: 400px;
@@ -155,6 +169,13 @@ body main #hero .hero-content .hero-left #btn-placeholder {
   left: -5vh;
   width: 55vw;
   height: 15vh;
+}
+@media (max-width: 600px) {
+  body main #hero .hero-content .hero-left #btn-placeholder {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+  }
 }
 body main #hero .hero-content .hero-left #btn-placeholder a {
   background-color: #7b6149;
@@ -211,6 +232,11 @@ body main #hero .hero-content .hero-right img {
 }
 body main #hero .hero-content .hero-right img:hover {
   transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  body main #hero .hero-content .hero-right {
+    visibility: hidden;
+  }
 }
 body main #products-list {
   display: flex;
@@ -303,6 +329,9 @@ body main #about {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 body main #about #container {
   display: flex;
@@ -318,9 +347,24 @@ body main #about #container {
   border-radius: 24px;
   gap: 12px;
   text-align: center;
+  font-size: 0.8rem;
 }
 body main #about #container article {
   gap: 12px;
+  font-size: 0.75rem;
+}
+@media (max-width: 600px) {
+  body main #about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main #about #container {
+    width: 90vw;
+    height: 80vh;
+    margin-top: 15px;
+  }
 }
 body main #contact {
   display: flex;
@@ -385,6 +429,10 @@ body footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
   background: linear-gradient(to top, #ea7152, #d3976a);
   padding: 5px 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
