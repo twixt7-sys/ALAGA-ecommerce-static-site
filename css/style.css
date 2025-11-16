@@ -23,12 +23,25 @@ body header {
   padding: 5px 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-body header #search {
+body header #logo-and-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body header #logo-and-search #logo {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+body header #logo-and-search #logo:hover {
+  transform: scale(1.05);
+}
+body header #logo-and-search #search {
   border-radius: 25px;
   border: solid;
   border-width: 1.5px;
   border-color: #ffca95;
-  width: 30%;
+  width: 80%;
   height: 50%;
   display: flex;
   align-items: center;
@@ -36,22 +49,15 @@ body header #search {
   opacity: 0.5;
   padding: 3px;
 }
-body header #search svg {
+body header #logo-and-search #search svg {
   height: 100%;
 }
-body header #search input {
+body header #logo-and-search #search input {
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   outline: none;
-}
-body header #logo {
-  height: 50px;
-  transition: transform 0.3s ease;
-}
-body header #logo:hover {
-  transform: scale(1.05);
 }
 @media (max-width: 600px) {
   body header {
@@ -63,6 +69,7 @@ body header nav {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 10px;
   gap: 0.5rem;
   z-index: 1;
 }
@@ -328,12 +335,16 @@ body main #about {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 body main #about #container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,7 +357,6 @@ body main #about #container {
   background: linear-gradient(to bottom right, #ffca95, #ffe5b7);
   border-radius: 24px;
   gap: 12px;
-  text-align: center;
   font-size: 0.8rem;
 }
 body main #about #container article {
@@ -361,8 +371,11 @@ body main #about #container article {
     align-items: flex-start;
   }
   body main #about #container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 90vw;
-    height: 80vh;
     margin-top: 15px;
   }
 }

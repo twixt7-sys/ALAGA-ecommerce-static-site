@@ -93,36 +93,38 @@ body {
 		background: $header-bg;
 		padding: 5px 25px;
 		box-shadow: $shadow;
-		#search {
-			border-radius: 25px;
-			border: solid;
-			border-width: 1.5px;
-			border-color: #ffca95;
-			width: 30%;
-			height: 50%;
-			display: flex;
-			align-items: center;
-			background-color: #ffca95;
-			opacity: 0.5;
-			padding: 3px;
-			svg {
-				height: 100%;
-			}
-			input {
-				height: 100%;
-				width: 100%;
-				background-color: #FFF0;
-				border: none;
-				outline: none;
-			}
-		}
+		#logo-and-search {
+			@include flex-center(row, space-between);
+			#logo {
+				height: 50px;
+				transition: transform 0.3s ease;
 
-		#logo {
-			height: 50px;
-			transition: transform 0.3s ease;
-
-			&:hover {
-				transform: scale(1.05);
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+			#search {
+				border-radius: 25px;
+				border: solid;
+				border-width: 1.5px;
+				border-color: #ffca95;
+				width: 80%;
+				height: 50%;
+				display: flex;
+				align-items: center;
+				background-color: #ffca95;
+				opacity: 0.5;
+				padding: 3px;
+				svg {
+					height: 100%;
+				}
+				input {
+					height: 100%;
+					width: 100%;
+					background-color: #FFF0;
+					border: none;
+					outline: none;
+				}
 			}
 		}
 
@@ -132,6 +134,7 @@ body {
 
 		nav {
 			@include flex-center(row, flex-start);
+			margin-top: 10px;
 			gap: 0.5rem;
 			z-index: 1;
 			a {
@@ -365,14 +368,15 @@ body {
 			}
 		}
         #about {
-            @include flex-center(row, center, center);
+            @include flex-center(row, center, flex-start);
 			height: 100vh;
 			width: 100vw;
 			overflow: hidden;
             #container {
+				@include flex-center(row, center, flex-start);
                 @include container();
-				text-align: center;
 				font-size: 0.8rem;
+
 				article{
 					gap: 12px;
 					font-size: 0.75rem;
@@ -381,8 +385,8 @@ body {
 			@media (max-width: 600px) {
 				@include flex-center(row, center, flex-start);
 				#container {
+					@include flex-center(column, center, flex-start);
 					width: 90vw;
-					height: 80vh;
 					margin-top: 15px;
 				}
 			}
