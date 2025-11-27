@@ -114,6 +114,8 @@ body main {
   height: 100%;
   flex: 1;
   position: relative;
+  /* =============== GALLERY PAGE =============== */
+  /* =============== AUDIO PAGE =============== */
 }
 body main::before, body main::after {
   content: "";
@@ -438,6 +440,153 @@ body main #contact #container form #submit:hover {
 body main #contact #container form #submit:active {
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body main #gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 18px;
+  padding: 25px 40px;
+  overflow-y: auto;
+}
+body main #gallery .gallery-card {
+  background: linear-gradient(to top, #ffca95, #ffe5b7);
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+body main #gallery .gallery-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+body main #gallery .gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-card:hover body main #gallery .gallery-card img {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  body main #gallery .gallery-card {
+    width: 42vw;
+    height: 42vw;
+  }
+}
+body main #intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  gap: 15px;
+}
+body main #intro-section h1 {
+  font-size: 2.2rem;
+  color: #5e3e1a;
+}
+body main #intro-section p {
+  font-size: 1rem;
+  width: 60%;
+  color: #7b6149;
+}
+@media (max-width: 600px) {
+  body main #intro-section p {
+    width: 80%;
+  }
+}
+body main #audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 35px;
+  gap: 16px;
+  overflow-y: auto;
+}
+body main #audio .audio-card {
+  background: linear-gradient(to top, #ffca95, #ffe5b7);
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 90%;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+body main #audio .audio-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+body main #audio .audio-card .track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body main #audio .audio-card .track-info h4 {
+  color: #5e3e1a;
+}
+body main #audio .audio-card .track-info span {
+  font-size: 0.85rem;
+  color: #7b6149;
+}
+body main #audio .audio-card .audio-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body main #audio .audio-card .audio-controls button {
+  background-color: #7b6149;
+  color: #ffe5b7;
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+body main #audio .audio-card .audio-controls button:hover {
+  background-color: #b08054;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+body main #audio .audio-card .audio-controls button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+  body main #audio .audio-card {
+    width: 95%;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 body footer {
   display: flex;

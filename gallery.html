@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>ALAGA: Pet Supplies E-store</title>
-		<link rel="stylesheet" href="./css/style.css">
-	</head>
-	<body>
-		<header>
-			<div id="logo-and-search">
-				<img src="./images/headerlogo.svg" alt="ALAGA Logo" 
-				id="logo">
-				<div id="search">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-						<circle cx="11" cy="11" r="8"></circle>
-						<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-					</svg>
-					<input type="text" name="" id="">
-				</div>
-			</div>
-			<nav>
-				<a href="./index.html">HOME</a>
-				<a href="./products.html"">PRODUCTS</a>
-				<a href="./gallery.html" style="background-color: #bb5a5a;">GALLERY</a>
-				<a href="./about.html">ABOUT</a>
-				<a href="./contact.html">CONTACT</a>
-			</nav>
-		</header>
-		<main>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo-and-search">
+			<img src="./images/headerlogo.svg" id="logo" alt="Logo">
+		</div>
+
+		<nav>
+			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="products.html">PRODUCTS</a>
+			<a href="gallery.html" style="background-color: #bb5a5a;">GALLERY</a>
+			<a href="audio.html">AUDIO</a>
+			<a href="contact.html">CONTACT</a>
+		</nav>
+	</header>
+
+	<main>
 			<section id="products-list">
 				<a class="product-card" id="product1">
 					<div class="img-holder">
@@ -36,15 +32,36 @@
 					</div>
 					<br>
 					<div class="descript-holder">
-						<h4>Pedigree Adult Dog Food Beef 1.3kg</h4>
-						<h5>₱315.00</h5>
+						<h4>Fantasy Image Editing Activity</h4>
+						<h5>Made using Photoshop.</h5>
+					</div>
+					<button class="card-btn"><h6><strong>+</strong></h6></button>
+				</a>
+				<a class="product-card" id="product1">
+					<div class="img-holder">
+						<img src="./images/mini_logo.png"
+						class="product-img" alt="Product Image"/>
+					</div>
+					<br>
+					<div class="descript-holder">
+						<h4>Mini Logo Design Activity</h4>
+						<h5>Made using Canva.</h5>
+					</div>
+					<button class="card-btn"><h6><strong>+</strong></h6></button>
+				</a>
+				<a class="product-card" id="product1">
+					<div class="img-holder">
+						<img src="./images/image_edit.jpg"
+						class="product-img" alt="Product Image"/>
+					</div>
+					<br>
+					<div class="descript-holder">
+						<h4>Image Editing Activity</h4>
+						<h5>Made using Ibis Paint X.</h5>
 					</div>
 					<button class="card-btn"><h6><strong>+</strong></h6></button>
 				</a>
 			</section>
 		</main>
-		<footer>
-			<label> A STARTUP COMPANY &copy; </label>
-		</footer>
-	</body>
+</body>
 </html>
